@@ -1,0 +1,39 @@
+.navigation {
+  border-radius: 40px !important;
+  background: linear-gradient(315deg, #0d0d0d, #0b0b0b) !important;
+  box-shadow: -10px -10px 20px #050505, 10px 10px 20px #131313 !important;
+}
+
+.link {
+  text-decoration: none !important;
+  /* background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%) !important; */
+}
+
+li {
+  font-size: 1.3rem !important;
+  text-transform: capitalize;
+  text-decoration: solid white;
+  font-weight: 700;
+}
+.brand {
+  font-size: 1.5rem !important;
+  text-transform: capitalize;
+  text-decoration: solid white;
+  font-weight: 700;
+  font-family: "Metal Mania", cursive !important;
+}
+.search-btn {
+  background-color: #fc5296 !important;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%) !important;
+  box-shadow: none !important;
+  border: none;
+}
+@media (max-width: 500px) {
+  .navigation {
+    margin: 1rem;
+    padding: 10px;
+  }
+  li {
+    font-size: 1rem !important;
+  }
+}

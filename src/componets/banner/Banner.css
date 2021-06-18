@@ -1,0 +1,112 @@
+.Carousel {
+  position: relative;
+  width: 97vw;
+  /* min-width: 100%; */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 50px;
+  padding: 5rem;
+  background: linear-gradient(145deg, #090909, #070707);
+  box-shadow: 5px 5px 7px #060606, -5px -5px 7px #0a0a0a;
+}
+.heroimg img {
+  width: 550px !important;
+  height: 550px !important;
+  transform: skew(20deg, -20deg);
+}
+
+.heroimg1 img {
+  width: 400px !important;
+  height: 300px !important;
+  transform: skew(-30deg, 30deg);
+}
+.wave {
+  width: 99wv !important;
+  position: absolute;
+  margin-top: 31rem;
+}
+.bannerCard {
+  transform: skew(-15deg, 15deg);
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  height: 35rem;
+  margin: 0 0 15rem 0rem !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  /* background: #141414 !important;
+  /* box-shadow: 5px 5px 0px #101010, -5px -5px 0px #181818 !important; */
+  text-align: center;
+  margin: 2rem;
+}
+.bannerCard .title {
+  font-size: 5rem !important;
+  color: aliceblue;
+  font-family: "Metal Mania", cursive !important;
+}
+.bannerCard > .typed {
+  font-size: 3rem !important;
+  color: grey;
+  font-family: "Metal Mania", cursive !important;
+  background: none !important;
+}
+.search-btn {
+  background: white !important;
+  color: gray !important;
+  box-shadow: none !important;
+  border: none;
+  min-width: 3rem !important;
+  margin: 1rem;
+}
+@media (max-width: 800px) {
+  .Carousel {
+    padding: 0;
+    flex-direction: column;
+  }
+  .heroimg img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .heroimg1 img {
+    width: 200px !important;
+    height: 150px !important;
+  }
+  .bannerCard {
+    width: 25rem;
+    height: 15rem;
+  }
+  .bannerCard .title {
+    font-size: 3.5rem !important;
+  }
+  .bannerCard > .typed {
+    font-size: 2.5rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .Carousel {
+    padding: 0;
+    flex-direction: column;
+    margin-top: 4rem !important;
+    height: 70vh;
+  }
+  .heroimg img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  .heroimg1 img {
+    display: none;
+  }
+  .bannerCard {
+    width: 25rem;
+    height: 15rem;
+  }
+  .bannerCard .title {
+    font-size: 3rem !important;
+  }
+  .bannerCard > .typed {
+    font-size: 2rem !important;
+  }
+}

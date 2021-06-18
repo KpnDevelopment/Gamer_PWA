@@ -1,0 +1,164 @@
+.ShopDeatails {
+  margin-top: 4rem !important;
+}
+.name {
+  font-size: 4rem !important;
+  font-family: "Metal Mania", cursive !important;
+}
+.type {
+  font-size: 3rem !important;
+  font-family: "Big Shoulders Stencil Text", cursive !important;
+}
+.desc {
+  font-size: 2rem;
+  font-family: "Federant", cursive !important;
+}
+.avathar {
+}
+
+.meter {
+  box-sizing: content-box;
+  height: 25px; /* Can be anything */
+  position: relative;
+  margin: 60px 0 20px 0; /* Just for demo spacing */
+  background: #555;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  width: 15rem;
+}
+.meter > span {
+  text-align: center;
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43, 194, 83) 37%,
+    rgb(84, 240, 84) 69%
+  );
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.meter > span:after,
+.animate > span > span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.animate > span:after {
+  display: none;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.orange > span {
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.red > span {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(22, 189, 214, 1) 57%,
+    rgba(45, 76, 80, 1) 90%
+  );
+}
+.blue > span {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.nostripes > span > span,
+.nostripes > span::after {
+  background-image: none;
+}
+@media (max-width: 500px) {
+  .ShopDeatails {
+    margin: 0 !important;
+    margin-top: 5rem !important;
+    display: flex;
+    overflow-x: hidden !important;
+    /* flex-direction: column !important; */
+  }
+  .name {
+    font-size: 30px !important;
+  }
+  .type {
+    font-size: 20px !important;
+  }
+  .desc {
+    font-size: 30px !important;
+  }
+  .meter {
+    width: 8rem;
+    margin: 5px;
+  }
+
+  .avathar {
+    display: flex;
+    /* flex-direction: column !important; */
+    width: 100% !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .avathar img {
+    width: 100%;
+    height: 25rem !important;
+  }
+  .split {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  video {
+    width: 100vw !important;
+    height: 30rem !important;
+  }
+}

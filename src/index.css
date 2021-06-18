@@ -1,0 +1,15 @@
+:root {
+  --cardColor: "#292929";
+  --bgclr: "#121212";
+  --cardBoClr: "#0a0a0a";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #121212; */
+}
+body {
+  overflow-x: hidden;
+  background: #121212;
+}

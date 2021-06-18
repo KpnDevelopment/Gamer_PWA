@@ -1,0 +1,14 @@
+body {
+  background: #121212;
+}
+.App {
+  margin: 0 !important;
+  padding: 0 !important;
+  justify-content: center !important;
+  background: #121212 !important;
+}
+@media (max-width: 800px) {
+  .App {
+    overflow-y: hidden;
+  }
+}

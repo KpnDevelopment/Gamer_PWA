@@ -1,0 +1,103 @@
+.Home {
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  background: linear-gradient(315deg, #0d0d0d, #0b0b0b) !important;
+}
+.card {
+  border-radius: 19px !important;
+  background: linear-gradient(315deg, #0d0d0d, #0b0b0b) !important;
+  box-shadow: -10px -10px 20px #050505, 10px 10px 20px #131313 !important;
+  padding: 10px 0;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #fff;
+}
+.cbody {
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.1) !important;
+  transition-delay: 200ms !important;
+  transition-duration: 900ms !important;
+  z-index: 1;
+}
+.cardBody {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+  /* transform: translateY(5px);
+  opacity: 0; */
+}
+.cardBody:hover {
+  transform: translateY(-10px);
+  transition-delay: 500ms;
+  transition-duration: 1000ms;
+  opacity: 1;
+}
+
+.cardImage {
+  padding: 3rem;
+}
+/* .ctext,
+.btn {
+  opacity: 0;
+} */
+.cardImage:hover {
+  transform: none;
+  transition-delay: 20ms;
+  transition-duration: 1500ms;
+  transform: skewY(5deg);
+}
+.cardBody:hover {
+  transition-duration: 1.5s;
+}
+.btn {
+  border-radius: 54px;
+  background: linear-gradient(315deg, #cfcfcf, #aeaeae);
+  box-shadow: -5px -5px 3px #b2b2b2, 5px 5px 3px #d0d0d0;
+}
+.btn:hover {
+  background: #b24592; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f15f79,
+    #b24592
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f15f79,
+    #b24592
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (max-width: 800px) {
+  .Home {
+    margin: 30px !important;
+    padding: 0;
+  }
+  .cardGroup {
+    margin: 0;
+    padding: 0;
+  }
+  .rows {
+    margin: 0 !important;
+  }
+  .card {
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .Home {
+    margin: 30px !important;
+    padding: 0;
+  }
+  .cardGroup {
+    margin: 0;
+    padding: 0;
+  }
+  .rows {
+    margin: 0 !important;
+  }
+}
