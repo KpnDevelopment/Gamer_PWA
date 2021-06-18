@@ -55,7 +55,7 @@ function Shop() {
                 className="card"
                 key={index}
                 style={{
-                  width: "26rem",
+                  width: "25rem",
                   margin: "1rem",
                 }}
                 className="items"
